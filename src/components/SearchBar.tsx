@@ -18,11 +18,6 @@ export const SearchBar = (props: ISearchBarProps) => {
     getAllJobs(searchTerm);
   }
 
-  if (searchTerm === ''){
-      return(
-          <div></div>
-      )
-  }
   return (
     <div>
       <label>Search</label>
