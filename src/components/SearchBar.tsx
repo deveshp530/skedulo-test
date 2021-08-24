@@ -9,7 +9,6 @@ export const SearchBar = (props: ISearchBarProps) => {
   console.log(searchTerm);
   const { getAllJobs } = props;
 
-
   const onChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setSearchTerm(event.target.value);
   };
@@ -20,13 +19,17 @@ export const SearchBar = (props: ISearchBarProps) => {
 
   return (
     <div>
-      <label>Search</label>
-      <input
-        type="text"
-        placeholder="Search"
-        value={searchTerm}
-        onChange={onChange}
-      />
+      <form>
+        <label htmlFor='getJob'>Search</label>
+        <input
+        id='getJob'
+          type="text"
+          className="form-control"
+          placeholder="Search for a Job"
+          value={searchTerm}
+          onChange={onChange}
+        />
+      </form>
     </div>
   );
 };

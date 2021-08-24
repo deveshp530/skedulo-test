@@ -7,7 +7,7 @@ the search bar will call the function to connect with the service and display jo
 the joblist takes in the data of the resulting searchterm and passes it on to the component. The joblist then takes in the prop of jobs which uses the map function to create multiple Job components based on the query.
 
 # Improvements
-I couldn't get the field to clear when the search field is empty. 
+I couldn't get the field to clear when the search field is empty. Maybe I could pass down the state of the data down to the child component, and check if the searchTerm is empty, then clear the data and pass it back up
 
 # Challenges
 
